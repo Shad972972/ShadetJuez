@@ -97,7 +97,7 @@ def scrape_vinted_global_elements_with_proxy_pagination():
     # chrome_options.add_argument('--disable-dev-shm-usage')
     chrome_options.add_argument("--start-maximized")
 
-    driver_path = os.path.join(os.getcwd(), 'chromedriver.exe')
+    driver_path = os.path.join(os.getcwd(), 'chromedriver')
     if not os.path.exists(driver_path):
         print(f"Erreur : chromedriver.exe non trouvé à l'emplacement : {driver_path}")
         print("Veuillez télécharger le chromedriver correspondant à votre version de Chrome et le placer au même endroit que le script.")
